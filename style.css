@@ -1,0 +1,25 @@
+body {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#rounded-logo {
+    stroke-dasharray: 1149;
+    animation: 2s fillSvg ease-in;
+    fill: white;
+}
+
+@keyframes fillSvg {
+    0% {
+        stroke-dashoffset: 1149;
+        fill: black;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: white;
+    }
+}
