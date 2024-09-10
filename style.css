@@ -6,13 +6,13 @@ body {
     height: 100vh;
 }
 
-#rounded-logo {
+#rounded-logo-black {
     stroke-dasharray: 1149;
-    animation: 2s fillSvg ease-in;
+    animation: 2s fillSvgWhite ease-in;
     fill: white;
 }
 
-@keyframes fillSvg {
+@keyframes fillSvgWhite {
     0% {
         stroke-dashoffset: 1149;
         fill: black;
@@ -21,5 +21,24 @@ body {
     100% {
         stroke-dashoffset: 0;
         fill: white;
+    }
+}
+
+
+#rounded-logo-white {
+    stroke-dasharray: 1149;
+    animation: 2s fillSvgBlack ease-in;
+    fill: black;
+}
+
+@keyframes fillSvgBlack {
+    0% {
+        stroke-dashoffset: 1149;
+        fill: white;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: black;
     }
 }
