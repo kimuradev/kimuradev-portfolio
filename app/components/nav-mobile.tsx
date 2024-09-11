@@ -13,7 +13,7 @@ const NavMobile = () => {
     };
 
     return (
-        <header className="lg:hidden mb-8 lg:mb-16 tracking-tight flex items-end justify-between">
+        <header className="lg:hidden mb-8 lg:mb-16 tracking-tight flex items-end justify-between transition-opacity">
             <Logo />
             <button onClick={handleClick}
                 className="cursor-pointer absolute top-0 right-0 px-8 py-8 z-10">

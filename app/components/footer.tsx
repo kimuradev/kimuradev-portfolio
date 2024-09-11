@@ -53,7 +53,8 @@ export default function Footer() {
           </a>
         </li>
       </ul> */}
-      <p className="mt-8 text-neutral-600 dark:text-neutral-300">
+      <p className="mt-8 text-neutral-600 dark:text-neutral-300 opacity-0 transition-fadein" 
+       style={{ animationDelay: `1000ms` }}>
         © {new Date().getFullYear()} designed & built by Leandro Kimura
       </p>
     </footer>
