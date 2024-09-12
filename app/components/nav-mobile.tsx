@@ -47,7 +47,7 @@ const HamburguerMenu = ({ isOpen, handleClick }: HamburguerMenuProps) => {
     )
 }
 
-function Section({ isOpen }: { isOpen: boolean }) {
+function Section({ isOpen, handleClick }: { isOpen: boolean, handleClick: () => void }) {
     const { resolvedTheme } = useTheme();
     const [mounted, setMounted] = useState(false)
 
@@ -63,7 +63,7 @@ function Section({ isOpen }: { isOpen: boolean }) {
         {isOpen && (
             <section className={`lg:hidden cursor-pointer pr-5 z-10 fixed w-full h-screen top-0 left-0 ${resolvedTheme === 'dark' ? 'bg-black' : 'bg-white'} flex flex-col justify-evenly items-center`}>
                 <ul className="flex flex-col items-center justify-between min-h-[250px]">
-                    <NavLinks items={navItems} />
+                    <NavLinks items={navItems} handleClick={handleClick}/>
                 </ul>
             </section>
         )}
@@ -88,7 +88,7 @@ const NavMobile = () => {
                 <HamburguerMenu isOpen={isOpen} handleClick={handleClick} />
             </div>
 
-            <Section isOpen={isOpen} />
+            <Section isOpen={isOpen} handleClick={handleClick}/>
         </div>
     )
 };

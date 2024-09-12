@@ -53,7 +53,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+          <main className="flex-auto min-w-0 mt-6 flex flex-col px-0 lg:px-8">
             {children}
             <Analytics />
             <SpeedInsights />
