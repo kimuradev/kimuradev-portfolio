@@ -1,14 +1,23 @@
-export const navItems = {
-    '/about-me': {
+type NavItemProps = {
+    path: string;
+    name: string;
+}[];
+
+export const navItems: NavItemProps = [
+    {
+        path: '/about-me',
         name: 'about',
     },
-    '/experience': {
+    {
+        path: '/experience',
         name: 'experience',
     },
-    '/work': {
+    {
+        path: '/work',
         name: 'work',
     },
-    '/contact': {
-        name: `contact`,
+    {
+        path: '/contact',
+        name: 'contact',
     },
-}
+];
