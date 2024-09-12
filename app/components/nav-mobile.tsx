@@ -1,11 +1,10 @@
 'use client'
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { navItems } from 'app/utils/constants';
 import Logo from './logo';
 import NavLinks from './nav-links';
 import ThemeSwitchButton from './theme-switch';
-import { useTheme } from 'next-themes';
 
 type HamburguerMenuProps = {
     isOpen: boolean
@@ -13,32 +12,20 @@ type HamburguerMenuProps = {
 }
 
 const HamburguerMenu = ({ isOpen, handleClick }: HamburguerMenuProps) => {
-    const { resolvedTheme } = useTheme();
-    const [mounted, setMounted] = useState(false)
-
-    // useEffect only runs on the client, so now we can safely show the UI
-    useEffect(() => {
-        setMounted(true)
-    }, [])
-
-    if (!mounted) {
-        return null
-    }
-
     return (
         <button onClick={handleClick}
             className="cursor-pointer absolute top-[3px] right-0 px-8 py-8 z-100">
-            <span className={`${resolvedTheme === 'dark' ? 'bg-white' : 'bg-black'} block transition-all duration-300 ease-out 
+            <span className={`block transition-all duration-300 ease-out bg-primary
                     h-0.5 w-6 rounded-sm ${isOpen ?
                     'rotate-45 translate-y-1' : '-translate-y-0.5'
                 }`} >
             </span>
-            <span className={`${resolvedTheme === 'dark' ? 'bg-white' : 'bg-black'} block transition-all duration-300 ease-out 
+            <span className={`block transition-all duration-300 ease-out bg-primary
                     h-0.5 w-6 rounded-sm my-0.5 
                     ${isOpen ? 'opacity-0' : 'opacity-100'}`
             } >
             </span>
-            <span className={`${resolvedTheme === 'dark' ? 'bg-white' : 'bg-black'} block transition-all duration-300 ease-out
+            <span className={`block transition-all duration-300 ease-out bg-primary
                 h-0.5 w-6 rounded-sm ${isOpen ?
                     '-rotate-45 -translate-y-1' : 'translate-y-0.5'
                 }`} >
@@ -48,20 +35,9 @@ const HamburguerMenu = ({ isOpen, handleClick }: HamburguerMenuProps) => {
 }
 
 function Section({ isOpen, handleClick }: { isOpen: boolean, handleClick: () => void }) {
-    const { resolvedTheme } = useTheme();
-    const [mounted, setMounted] = useState(false)
-
-    // useEffect only runs on the client, so now we can safely show the UI
-    useEffect(() => {
-        setMounted(true)
-    }, [])
-
-    if (!mounted) {
-        return null
-    }
     return (<>
         {isOpen && (
-            <section className={`lg:hidden cursor-pointer pr-5 z-10 fixed w-full h-screen top-0 left-0 ${resolvedTheme === 'dark' ? 'bg-black' : 'bg-white'} flex flex-col justify-evenly items-center`}>
+            <section className={`lg:hidden cursor-pointer pr-5 z-10 fixed w-full h-screen top-0 left-0 bg-secondary flex flex-col justify-evenly items-center`}>
                 <ul className="flex flex-col items-center justify-between min-h-[250px]">
                     <NavLinks items={navItems} handleClick={handleClick}/>
                 </ul>
