@@ -46,7 +46,7 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
     >
-      <body className="antialiased max-w-6xl mx-4 mt-8 lg:mx-auto h-screen">
+      <body className="flex flex-col antialiased h-screen w-screen p-8 lg:max-w-6xl lg:mx-auto">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
