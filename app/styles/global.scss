@@ -26,34 +26,10 @@ html {
 }
 
 /* Light mode */
-
 .bg-primary {
   background: var(--bg-primary)
 }
 
 .bg-secondary {
-  background: var(--bg-secondary)
-}
-
-/* Dark Mode */
-.dark #rounded-logo circle {
-  fill: white;
-}
-
-.dark #rounded-logo .letterD{
-  fill: black;
-  stroke: black;
-}
-
-.dark #rounded-logo .letterK{
-  fill: black;
-  stroke: black;
-}
-
-.dark .bg-primary {
-  background: var(--bg-primary);
-}
-
-.dark .bg-secondary{
   background: var(--bg-secondary)
 }

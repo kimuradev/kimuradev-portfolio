@@ -1,4 +1,3 @@
-
 .transition-fadein {
   animation-duration: 1s;
   animation-name: fadein;
@@ -28,5 +27,23 @@
   }
   to {
     opacity: 100;
+  }
+}
+
+.transition-fadein-right {
+  animation-duration: 1s;
+  animation-name: fadein-right;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein-right {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 100;
+    transform: translateX(0);
   }
 }

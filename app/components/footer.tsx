@@ -5,9 +5,9 @@ export default function Footer() {
     <footer className="sticky bottom-0 mt-6 flex justify-between items-center">
       <p className="text-neutral-600 dark:text-neutral-300 opacity-0 transition-fadein"
         style={{ animationDelay: `1000ms` }}>
-        © {new Date().getFullYear()} designed & built by Leandro Kimura
+        © {new Date().getFullYear()} - kimuradev.com
       </p>
-      <ul className="flex gap-2">
+      <ul className="flex items-center gap-4">
         <li className="opacity-0 transition-fadein"
           style={{ animationDelay: `1100ms` }}>
           <Link href="https://www.linkedin.com/in/kimuradev/" rel="noopener noreferrer" target="_blank" >

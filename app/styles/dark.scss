@@ -1,0 +1,21 @@
+.dark {
+  .bg-primary {
+    background: var(--bg-primary);
+  }
+
+  .bg-secondary {
+    background: var(--bg-secondary);
+  }
+
+  #rounded-logo {
+    circle {
+      fill: white;
+    }
+
+    .letterK,
+    .letterD {
+      fill: black;
+      stroke: black;
+    }
+  }
+}

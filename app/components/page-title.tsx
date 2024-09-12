@@ -5,7 +5,7 @@ type PageTitle = {
 
 export default function PageTitle({ index, title }) {
     return (
-        <section className="flex gap-4 justify-center">
+        <section className="flex gap-4 justify-center opacity-0 transition-fadein-right">
             <h1 className="flex text-2xl mb-8 tracking-tighter gap-2">
                 <strong>{`${index}.`}</strong>
                 <span>{title.toUpperCase()}</span>
