@@ -5,8 +5,14 @@
   --bg-secondary: #000;
   --border-primary: #FFF;
   --stroke-primary: #000;
+  --nav-selected: var(--color-zinc-600);
 }
 .dark {
+
+  strong {
+    color: var(--color-zinc-400);
+  }
+
   .text-primary {
     color: var(--text-primary)
   }
@@ -37,5 +43,9 @@
 
   .stroke-primary {
     stroke: var(--stroke-primary)
+  }
+
+  .nav-selected {
+    background-color: var(--nav-selected);
   }
 }

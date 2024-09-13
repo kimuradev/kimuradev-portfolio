@@ -20,6 +20,7 @@ html {
   --bg-secondary: #FFF;
   --border-primary: var(--color-gray-300);
   --stroke-primary: #FFF;
+  --nav-selected: var(--color-zinc-200);
 }
 
 /* Light mode */
@@ -41,4 +42,8 @@ html {
 
 .border-primary {
   border-color: var(--border-primary);
+}
+
+.nav-selected {
+  background-color: var(--nav-selected);
 }
