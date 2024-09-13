@@ -19,7 +19,7 @@ export default function Page() {
       <div className='max-w-[600px] opacity-0 transition-fadein-down'
         style={{ animationDelay: '800ms' }}>
         <p >
-          i'm a software engineer driven by a passion for technology and its potential to reshape the world.
+          I'm a software engineer driven by a passion for technology and its potential to reshape the world.
           explore my work to see how innovation and creativity can drive meaningful change.
         </p>
         <p>

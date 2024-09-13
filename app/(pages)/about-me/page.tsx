@@ -3,8 +3,8 @@ import Description from "./description"
 import ProfileImage from "./profile-image"
 
 export const metadata = {
-  title: 'About Me',
-  description: 'Discover who I am.',
+  title: 'about me',
+  description: 'discover who I am.',
 }
 
 export default function Page() {

@@ -13,8 +13,8 @@ import { Header } from './components/header'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'kimuradev | Portfolio',
-    template: '%s | Portfolio',
+    default: 'kimuradev | portfolio',
+    template: '%s | kimuradev.com',
   },
   description: 'Leandro Kimura portfolio.',
   openGraph: {
@@ -51,7 +51,7 @@ export default function RootLayout({
       <body className="flex flex-col antialiased h-screen w-screen p-8 lg:max-w-6xl lg:mx-auto">
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           disableTransitionOnChange
         >
           <Header />

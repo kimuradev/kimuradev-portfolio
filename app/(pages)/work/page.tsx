@@ -1,7 +1,7 @@
 import PageTitle from "app/components/page-title"
 
 export const metadata = {
-  title: 'Some Jobs',
+  title: 'some jobs',
   description: 'See some things I`ve built',
 }
 

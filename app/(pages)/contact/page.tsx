@@ -2,7 +2,7 @@ import PageTitle from "app/components/page-title"
 import { Send } from "lucide-react"
 
 export const metadata = {
-  title: 'Contact me',
+  title: 'contact me',
   description: 'Let`s get in touch',
 }
 
@@ -25,7 +25,7 @@ export default function Page() {
 
         <h3 className="mb-8 opacity-0 transition-fadein-down"
           style={{ animationDelay: '700ms' }}>
-          Whether you have a question or just want to say hello, I'll do my best to respond.
+          whether you have a question or just want to say hello, I'll do my best to respond.
         </h3>
 
         <a
