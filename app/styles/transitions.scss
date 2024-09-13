@@ -1,14 +1,32 @@
-.transition-fadein {
+.transition-fadein-down {
   animation-duration: 1s;
-  animation-name: fadein;
+  animation-name: fadein-down;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
-@keyframes fadein {
+@keyframes fadein-down {
   from {
     opacity: 0;
     transform: translateY(-20px);
+  }
+  to {
+    opacity: 100;
+    transform: translateY(0);
+  }
+}
+
+.transition-fadein-up {
+  animation-duration: 1s;
+  animation-name: fadein-up;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
     opacity: 100;
@@ -41,6 +59,24 @@
   from {
     opacity: 0;
     transform: translateX(-20px);
+  }
+  to {
+    opacity: 100;
+    transform: translateX(0);
+  }
+}
+
+.transition-fadein-left {
+  animation-duration: 1s;
+  animation-name: fadein-left;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein-left {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
   }
   to {
     opacity: 100;

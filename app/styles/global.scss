@@ -15,21 +15,30 @@ html {
 
 :root {
   --linkedin-color: #0a66c2;
+  --text-primary: #FFF;
   --bg-primary: #000;
   --bg-secondary: #FFF;
-}
-
-:root[class~="dark"] {
-  --linkedin-color: white;
-  --bg-primary: #FFF;
-  --bg-secondary: #000;
+  --border-primary: var(--color-gray-300);
+  --stroke-primary: #FFF;
 }
 
 /* Light mode */
+.text-primary {
+  color: var(--text-primary)
+}
+
+.stroke-primary {
+  stroke: var(--stroke-primary)
+}
+
 .bg-primary {
   background: var(--bg-primary)
 }
 
 .bg-secondary {
   background: var(--bg-secondary)
+}
+
+.border-primary {
+  border-color: var(--border-primary);
 }

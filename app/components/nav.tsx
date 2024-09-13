@@ -7,7 +7,7 @@ export function Navbar() {
   return (
     <>
       <header className="hidden mb-16 tracking-tight lg:flex items-end justify-between">
-        <div className='transition-fadein'>
+        <div className='transition-fadein-down'>
           <Logo />
         </div>
         <div className="lg:sticky lg:top-20">
@@ -16,9 +16,9 @@ export function Navbar() {
             id="nav"
           >
             <div className="flex flex-row space-x-0 pr-10">
-              <NavLinks items={navItems} customStyle="transition-fadein opacity-0"/>
+              <NavLinks items={navItems} customStyle="transition-fadein-down opacity-0"/>
             </div>
-            <div className='flex transition-fadein opacity-0' style={{ animationDelay: '500ms' }}>
+            <div className='flex transition-fadein-down opacity-0' style={{ animationDelay: '500ms' }}>
                 <ThemeSwitchButton />
             </div>
           </nav>

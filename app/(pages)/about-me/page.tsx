@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <>
       <PageTitle index="01" title={metadata.title} />
-      <section>
+      <section className="flex flex-col lg:flex-row gap-8 lg:gap-4 items-center">
         <Description />
         <ProfileImage />
       </section>

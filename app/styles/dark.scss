@@ -1,4 +1,16 @@
+:root[class~="dark"] {
+  --linkedin-color: #FFF;
+  --text-primary: #000;
+  --bg-primary: #FFF;
+  --bg-secondary: #000;
+  --border-primary: #FFF;
+  --stroke-primary: #000;
+}
 .dark {
+  .text-primary {
+    color: var(--text-primary)
+  }
+
   .bg-primary {
     background: var(--bg-primary);
   }
@@ -17,5 +29,13 @@
       fill: black;
       stroke: black;
     }
+  }
+
+  .border-primary {
+    border-color: var(--border-primary);
+  }
+
+  .stroke-primary {
+    stroke: var(--stroke-primary)
   }
 }
