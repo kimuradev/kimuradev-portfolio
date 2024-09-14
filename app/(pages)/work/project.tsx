@@ -19,7 +19,6 @@ function Card({ id, src, alt, seconds }: { id: string, src: any, alt: string, se
 
 function LearnMore({ id }: { id: string }) {
     return (
-
         <button className="absolute inset-0 flex items-center justify-center opacity-0 transition duration-300 ease-ou group-hover:opacity-100 text-secondary font-bold text-xl ">
             <Link
                 key={id}

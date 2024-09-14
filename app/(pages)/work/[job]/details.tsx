@@ -15,9 +15,8 @@ function Tags({ data }: { data: string[] }) {
 export default function ProjectDetails({ isReverse, data }: { isReverse: number, data: ProjectDetailProps }) {
     const { projectName, period, description, tags } = data;
 
-    console.log('isReverse: ', isReverse)
     return (
-        <div className={`flex flex-col gap-2 lg:basis-3/6 mt-8 lg:px-8 opacity-0 ${isReverse ? 'order-1 transition-fadein-left' : 'transition-fadein-right'}`}  style={{ animationDelay: `300ms` }}>
+        <div className={`flex flex-col gap-2 lg:basis-3/6 mt-8 lg:px-8 opacity-0 ${isReverse ? 'lg:order-1 transition-fadein-left' : 'transition-fadein-right'}`}  style={{ animationDelay: `300ms` }}>
             <div>
                 <h3 className="font-semibold text-3xl">{projectName}</h3>
                 <hr className="flex flex-1 border-t border-gray-300 my-4" />

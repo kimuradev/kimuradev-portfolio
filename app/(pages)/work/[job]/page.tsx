@@ -15,7 +15,7 @@ export default function JobDetails({ params }) {
             {data && data.projects.map((item: ProjectDetailProps, index) => (
                 <div className="flex flex-col lg:flex-row ">
                     <ProjectDetails data={item} isReverse={index % 2} />
-                    <ProjectImage src={item.img} isReverse={index % 2}/>
+                    <ProjectImage src={item.img} url={item.url} isReverse={index % 2}/>
                 </div>
             ))}
         </>

@@ -3,7 +3,8 @@ export type ProjectDetailProps = {
   period: string,
   tags: string[],
   description: string
-  img: any
+  img: any,
+  url: string
 }
 
 export type ProjectProps = {

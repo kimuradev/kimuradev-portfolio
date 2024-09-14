@@ -51,7 +51,7 @@ export const data: ExperienceDataProps[] = [
     },
     {
         id: 'hsbc',
-        companyName: 'HSBC',
+        companyName: 'HSBC / Bradesco',
         jobTitle: 'Mid/Senior Software Engineer',
         period: 'Jun 2012 - Dec 2017',
         jobDescription: [
