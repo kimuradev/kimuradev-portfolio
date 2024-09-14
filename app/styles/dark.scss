@@ -32,18 +32,6 @@ html.dark {
     background: var(--bg-secondary);
   }
 
-  #rounded-logo {
-    circle {
-      fill: white;
-    }
-
-    .letterK,
-    .letterD {
-      fill: black;
-      stroke: black;
-    }
-  }
-
   .border-primary {
     border-color: var(--border-primary);
   }
