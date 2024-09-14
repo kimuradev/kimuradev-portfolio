@@ -1,0 +1,62 @@
+:root[class~="dark"] {
+  --linkedin-color: #FFF;
+  --text-primary: #000;
+  --bg-primary: #FFF;
+  --bg-secondary: #000;
+  --border-primary: #FFF;
+  --stroke-primary: #000;
+  --fill-primary: #000;
+  --fill-secondary: #FFF;
+  --nav-selected: var(--color-zinc-600);
+  --bg-footer: var(--color-zinc-950)
+}
+
+html.dark {
+  background-color: var(--color-zinc-950);
+}
+
+.dark {
+  strong {
+    color: var(--color-zinc-400);
+  }
+
+  .text-primary {
+    color: var(--text-primary)
+  }
+
+  .bg-primary {
+    background: var(--bg-primary);
+  }
+
+  .bg-secondary {
+    background: var(--bg-secondary);
+  }
+
+  #rounded-logo {
+    circle {
+      fill: white;
+    }
+
+    .letterK,
+    .letterD {
+      fill: black;
+      stroke: black;
+    }
+  }
+
+  .border-primary {
+    border-color: var(--border-primary);
+  }
+
+  .stroke-primary {
+    stroke: var(--stroke-primary)
+  }
+
+  .nav-selected {
+    background-color: var(--nav-selected);
+  }
+
+  footer {
+    background: var(--bg-footer)
+  }
+}
