@@ -3,12 +3,8 @@ import './styles/transitions.scss'
 import './styles/dark.scss'
 
 import type { Metadata } from 'next'
-import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from '@vercel/speed-insights/next'
-import Footer from './components/footer'
 import { baseUrl } from './sitemap'
 import { ThemeProvider } from './context/theme-provider'
-import { Header } from './components/header'
 import IndexPage from 'app'
 
 export const metadata: Metadata = {
@@ -57,13 +53,6 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <IndexPage children={children} />
-          {/* <Header />
-          <main className="flex-auto min-w-0 mt-6 flex flex-col px-0 lg:px-8">
-            {children}
-            <Analytics />
-            <SpeedInsights />
-          </main>
-          <Footer /> */}
         </ThemeProvider>
       </body>
     </html>
