@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="sticky bottom-0 flex justify-between items-center py-4">
+    <footer className="sticky bottom-0 flex justify-between items-center py-2 lg:py-4">
       <p className="text-neutral-600 dark:text-neutral-300 opacity-0 transition-fadein-up"
         style={{ animationDelay: `1000ms` }}>
         © {new Date().getFullYear()} - kimuradev.com

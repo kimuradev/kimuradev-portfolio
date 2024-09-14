@@ -11,8 +11,7 @@ export default function Page() {
     <>
       <PageTitle index="04" title={metadata.title} />
 
-      <div className="flex flex-col justify-center items-center gap-4">
-
+      <section className="flex flex-col flex-1 justify-center items-center gap-4">
         <h1 className="mb-8 text-6xl lg:text-8xl font-semibold tracking-tighter opacity-0 transition-fadein-down"
           style={{ animationDelay: '500ms' }}>
           let's get in touch
@@ -35,7 +34,7 @@ export default function Page() {
           <Send className="size-4 stroke-primary" />
           <span className="text-primary">send me a message</span>
         </a>
-      </div>
+      </section>
     </>
   )
 }

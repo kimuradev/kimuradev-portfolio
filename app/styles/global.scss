@@ -16,6 +16,7 @@ html {
   --border-primary: var(--color-gray-300);
   --stroke-primary: #FFF;
   --nav-selected: var(--color-zinc-200);
+  --bg-footer: #FFF;
 }
 
 /* Light mode */
@@ -41,4 +42,8 @@ html {
 
 .nav-selected {
   background-color: var(--nav-selected);
+}
+
+footer {
+  background: var(--bg-footer)
 }

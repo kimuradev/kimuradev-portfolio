@@ -18,12 +18,13 @@ export const metadata: Metadata = {
   },
   description: 'Leandro Kimura portfolio.',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'kimuradev | portfolio',
+    description: 'take a look at my portfolio',
     url: baseUrl,
-    siteName: 'My Portfolio',
+    siteName: 'kimuradev - portfolio',
     locale: 'en_US',
     type: 'website',
+    images: `${baseUrl}/api/og`
   },
   robots: {
     index: true,

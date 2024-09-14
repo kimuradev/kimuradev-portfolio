@@ -36,11 +36,11 @@ function LearnMore({ id }: { id: string }) {
 export default function Project() {
     return (
         <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:px-8">
+            <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:px-8">
                 {cardData.map((item, index) => (
                     <Card id={item.id} src={item.img} alt={item.alt} seconds={index+3}/>
                 ))}
-            </div>
+            </section>
         </>
     )
 }

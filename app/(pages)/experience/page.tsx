@@ -24,10 +24,10 @@ export default function Page() {
   return (
     <>
       <PageTitle index="02" title={metadata.title} />
-      <div className="flex flex-col lg:flex-row lg:px-8 gap-8">
+      <section className="flex flex-col lg:flex-row lg:px-8 gap-8">
         <MenuList data={data} selectedData={selectedData as ExperienceDataProps} handleClick={handleSelectExperience} />
         <JobDescription data={selectedData as ExperienceDataProps} />
-      </div>
+      </section>
     </>
   )
 }

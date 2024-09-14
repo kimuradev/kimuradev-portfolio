@@ -10,7 +10,7 @@ type PageTitleProps = {
 
 export default function PageTitle({ index, title, enableBack = false }: PageTitleProps) {
     return (
-        <section className="flex gap-4 justify-center items-center opacity-0 transition-fadein-right mb-8">
+        <div className="flex gap-4 justify-center items-center opacity-0 transition-fadein-right mb-8">
             {enableBack && (
                 <button className="cursor-pointer hover:scale-120 hover:text-zinc-400" onClick={() => window.history.back()}>
                     <ChevronLeft className="size-6" />
@@ -21,6 +21,6 @@ export default function PageTitle({ index, title, enableBack = false }: PageTitl
                 <span>{title.toUpperCase()}</span>
             </h1>
             <hr className="flex flex-1 border-t border-gray-300 my-4" />
-        </section>
+        </div>
     )
 }
