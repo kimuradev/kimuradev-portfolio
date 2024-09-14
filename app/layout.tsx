@@ -9,6 +9,7 @@ import Footer from './components/footer'
 import { baseUrl } from './sitemap'
 import { ThemeProvider } from './context/theme-provider'
 import { Header } from './components/header'
+import IndexPage from 'app'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -55,13 +56,14 @@ export default function RootLayout({
           defaultTheme="light"
           disableTransitionOnChange
         >
-          <Header />
+          <IndexPage children={children} />
+          {/* <Header />
           <main className="flex-auto min-w-0 mt-6 flex flex-col px-0 lg:px-8">
             {children}
             <Analytics />
             <SpeedInsights />
           </main>
-          <Footer />
+          <Footer /> */}
         </ThemeProvider>
       </body>
     </html>

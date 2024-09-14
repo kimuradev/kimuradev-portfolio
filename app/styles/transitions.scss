@@ -83,3 +83,36 @@
     transform: translateX(0);
   }
 }
+
+.loader svg {
+  stroke-dasharray: 1149;
+  animation: 2s fillSvg ease-in, 1s fadeout ease-out;
+  fill: var(--fill-primary);
+  animation-duration: 2s, 1s; 
+  animation-delay: 0s, 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fillSvg {
+  0% {
+    stroke-dashoffset: 1149;
+    fill: var(--fill-secondary);
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    fill: var(--fill-primary);
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 100;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
