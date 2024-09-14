@@ -8,9 +8,9 @@ import PbCard from 'app/assets/pb-card.jpg'
 import BradescoCard from 'app/assets/bradesco-card.jpg'
 
 import SkunexusImage from 'app/assets/skunexus.png'
-import BoschImage from 'app/assets/bosch.png'
+import BoschADEImage from 'app/assets/bosch-ade.png'
 import BoschIntrack from 'app/assets/bosch-intrack.png'
-import UnicefImage from 'app/assets/unicef.png'
+import UnicefImage from 'app/assets/mirum-unicef.png'
 import MirumSkyImage from 'app/assets/mirum-sky.png';
 import MirumJeJImage from 'app/assets/mirum-jej.png';
 import MirumLosangoImage from 'app/assets/mirum-losango.png';
@@ -89,7 +89,7 @@ export const projectDetailsData: ProjectProps[] = [
                 period: '2022',
                 tags: ['Angular 2', 'TypeScript', 'Javascript', 'Bootstrap'],
                 description: 'Logistics system to control internal products with GPS coordination. Led front-end enhancements for better user interaction.',
-                img: BoschImage,
+                img: BoschADEImage,
                 url: "https://bosch.com/"
             }
         ]
