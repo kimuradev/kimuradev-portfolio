@@ -12,7 +12,7 @@ export default function NavLinks({ items, customStyle, handleClick }: { items: N
                 <Link
                     key={item.name}
                     href={item.path}
-                    className={`hover:text-zinc-400 dark:hover:text-zinc-700 flex align-middle relative py-1 px-2 m-1 ${customStyle}`}
+                    className={`cursor-pointer hover:text-zinc-400 dark:hover:text-zinc-700 flex align-middle relative py-1 px-2 m-1 ${customStyle}`}
                     style={{ animationDelay: `${index}00ms` }}
                     onClick={handleClick}
                 >

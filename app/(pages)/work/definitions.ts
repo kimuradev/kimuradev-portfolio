@@ -1,6 +1,12 @@
+export type ProjectDetailProps = {
+  projectName: string,
+  period: string,
+  tags: string[],
+  description: string
+  img: any
+}
+
 export type ProjectProps = {
   id: string,
-  projectName: string,
-  skils: string[],
-  description: string
+  projects: ProjectDetailProps[]
 }
