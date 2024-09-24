@@ -9,12 +9,12 @@ export const navItems: NavItemProps = [
         name: 'about',
     },
     {
-        path: '/experience',
-        name: 'experience',
+        path: '/portfolio',
+        name: 'portofolio',
     },
     {
-        path: '/work',
-        name: 'work',
+        path: '/experience',
+        name: 'experience',
     },
     {
         path: '/contact',

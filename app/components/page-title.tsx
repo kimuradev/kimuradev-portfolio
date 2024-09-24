@@ -18,7 +18,7 @@ export default function PageTitle({ index, title, enableBack = false }: PageTitl
             )} 
             <h1 className="flex items-center text-2xl tracking-tighter gap-2">
                 {index && <strong>{`${index}.`}</strong>}
-                <span>{title.toUpperCase()}</span>
+                <span>{title.replace('_', ' ').toUpperCase()}</span>
             </h1>
             <hr className="flex flex-1 border-t border-gray-300 my-4" />
         </div>

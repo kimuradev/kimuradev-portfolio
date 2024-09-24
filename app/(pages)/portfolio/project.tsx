@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { cardData } from "./data"
+import { CardDataProps } from "./definitions"
 
 function Card({ id, src, alt, seconds }: { id: string, src: any, alt: string, seconds: number }) {
     return (
@@ -23,7 +23,7 @@ function LearnMore({ id }: { id: string }) {
             <Link
                 key={id}
                 className="flex flex-col space-y-1 mb-4"
-                href={`/work/${id}`}
+                href={`/portfolio/${id}`}
             >
                 <span className="border-solid border-1 border-primary bg-primary text-primary p-4 rounded cursor-pointer ">
                     learn more
@@ -33,11 +33,11 @@ function LearnMore({ id }: { id: string }) {
     )
 }
 
-export default function Project() {
+export default function Project({ data }: { data: CardDataProps[]}) {
     return (
         <>
             <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:px-8">
-                {cardData.map((item, index) => (
+                {data.map((item, index) => (
                     <Card key={item.id} id={item.id} src={item.img} alt={item.alt} seconds={index+3}/>
                 ))}
             </section>

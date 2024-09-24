@@ -4,7 +4,7 @@ function Tags({ data }: { data: string[] }) {
     return (
         <>
             {data.map(item => (
-                <div className="border-solid border-1 border-primary rounded-3xl px-2 py-1 inline-block">
+                <div key={item} className="border-solid border-1 border-primary rounded-3xl px-2 py-1 inline-block">
                     <span className="text-nowrap">{item}</span>
                 </div>
             ))}

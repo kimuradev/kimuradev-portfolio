@@ -1,4 +1,4 @@
-import { ProjectProps } from "./definitions";
+import { CardDataProps, ProjectProps } from "./definitions";
 
 import SkunexusCard from 'app/assets/skunexus-card.jpg'
 import BoschCard from 'app/assets/bosch-card.jpg'
@@ -18,13 +18,6 @@ import HsbcImage from 'app/assets/hsbc.png'
 import PbImage from 'app/assets/pb-consignado.png'
 import BradescoApp from 'app/assets/bradesco-app.png'
 import BradescoUnipass from 'app/assets/bradesco-unipass.png'
-
-
-type CardDataProps = {
-    id: string,
-    img: any,
-    alt: string
-}
 
 export const cardData: CardDataProps[] = [
     {
@@ -177,6 +170,154 @@ export const projectDetailsData: ProjectProps[] = [
                 url: "https://www.us.hsbc.com/credit-cards/rewards/"
             }
         ]
-    }
+    },
+    {
+        id: 'ab',
+        projects: [
+            {
+                projectName: 'AB Tennis Championship Manager',
+                period: '2023 - present',
+                tags: ['Next JS', 'Typescript', 'Node.js', 'Prisma ORM', 'Postgres'],
+                description: 'The Championship System management is a comprehensive platform for Tennis players that encompasses scheduling matches, tracking monthly and yearly game statistics, managing ranking scores, organizing tournaments, handling financial aspects, and more.',
+                img: SkunexusImage,
+                url: "https://ab-tenis.vercel.app/"
+            }
+        ]
+    },
+    {
+        id: 'smart_racing',
+        projects: [
+            {
+                projectName: 'SmartRacing SIM dashboard | App',
+                period: '2021',
+                tags: ['Android', 'Java', 'SQLite'],
+                description: 'Android application to collect data in real time: car damage, tyre wear, current speed, RPM, gear, current position, laps, fuel mix type, fuel laps and so on.',
+                img: BoschIntrack,
+                url: "https://smartracingapp.web.app/"
+            },
+        ]
+    },
+    {
+        id: 'my_little_school',
+        projects: [
+            {
+                projectName: 'My Little School | App',
+                period: '2021 ',
+                tags: ['React', 'React Native', 'Javascript'],
+                description: 'A mobile app designed to help parents find nearby schools based on their location. The app features advanced filters, allowing users to search by distance, tuition fees, and class schedules, offering a personalized and efficient way to select the best educational options for their children.',
+                img: BoschIntrack,
+                url: "https://smartracingapp.web.app/"
+            },
+        ]
+    },
+    {
+        id: 'voltage',
+        projects: [
+            {
+                projectName: 'Voltage Calculator | App',
+                period: '2020',
+                tags: ['React', 'React Native', 'Javascript'],
+                description: 'Led the bank’s digital transformation, developing a PWA using React. Implemented a Design System and integrated push notifications, focusing on optimizing customer experience.',
+                img: PbImage,
+                url: "https://pbconsignado.com.br/"
+            }
+        ]
+    },
+    {
+        id: 'multiplication_table',
+        projects: [
+            {
+                projectName: 'Learn Multiplication Table | Alexa skill',
+                period: '2019',
+                tags: ['Javascript'],
+                description: 'This skill helps children master multiplication tables from 1 to 10 through engaging repetition. It’s designed to make learning multiplication easier and more fun, reinforcing key concepts in a simple and effective way',
+                img: UnicefImage,
+                url: "https://www.amazon.com.br/kimuradev-Aprenda-Tabuada/dp/B081B893K3"
+            },
+        ]
+    },
+]
 
+
+export const extraCardData: CardDataProps[] = [
+    {
+        id: 'ab',
+        img: MirumCard,
+        alt: 'AB logo'
+    },
+    {
+        id: 'smart_racing',
+        img: BoschCard,
+        alt: 'Smart Racing logo'
+    },
+    {
+        id: 'my_little_school',
+        img: BoschCard,
+        alt: 'My Little School logo'
+    },
+    {
+        id: 'voltage',
+        img: SkunexusCard,
+        alt: 'Voltage Calculator logo'
+    },
+    {
+        id: 'multiplication_table',
+        img: PbCard,
+        alt: 'Alexa logo'
+    },
+]
+
+export const extraProjectDetailsData: ProjectProps[] = [
+    {
+        id: 'ab',
+        projects: [
+            {
+                projectName: 'AB Tennis Championship Manager',
+                period: '2023 - present',
+                tags: ['Next JS', 'Typescript', 'Node.js', 'Prisma ORM', 'Postgres'],
+                description: 'The Championship System management is a comprehensive platform for Tennis players that encompasses scheduling matches, tracking monthly and yearly game statistics, managing ranking scores, organizing tournaments, handling financial aspects, and more.',
+                img: SkunexusImage,
+                url: "https://ab-tenis.vercel.app/"
+            }
+        ]
+    },
+    {
+        id: 'smart_racing',
+        projects: [
+            {
+                projectName: 'SmartRacing SIM dashboard | App',
+                period: '2021 - present',
+                tags: ['Android', 'Java', 'SQLite'],
+                description: 'Android application to collect data in real time: car damage, tyre wear, current speed, RPM, gear, current position, laps, fuel mix type, fuel laps and so on.',
+                img: BoschIntrack,
+                url: "https://smartracingapp.web.app/"
+            },
+        ]
+    },
+    {
+        id: 'voltage',
+        projects: [
+            {
+                projectName: 'Voltage Calculator | App',
+                period: '2018 - 2020',
+                tags: ['React', 'React Native', 'Javascript'],
+                description: 'Led the bank’s digital transformation, developing a PWA using React. Implemented a Design System and integrated push notifications, focusing on optimizing customer experience.',
+                img: PbImage,
+                url: "https://pbconsignado.com.br/"
+            }
+        ]
+    },
+    {
+        id: 'multiplication_table',
+        projects: [
+            {
+                projectName: 'Learn Multiplication Table | Alexa skill',
+                period: '2018',
+                tags: ['Javascript'],
+                description: 'This skill helps children master multiplication tables from 1 to 10 through engaging repetition. It’s designed to make learning multiplication easier and more fun, reinforcing key concepts in a simple and effective way',
+                img: UnicefImage,
+                url: "https://www.amazon.com.br/kimuradev-Aprenda-Tabuada/dp/B081B893K3"
+            },
+        ]
+    },
 ]

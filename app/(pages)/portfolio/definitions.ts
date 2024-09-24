@@ -11,3 +11,9 @@ export type ProjectProps = {
   id: string,
   projects: ProjectDetailProps[]
 }
+
+export type CardDataProps = {
+  id: string,
+  img: any,
+  alt: string
+}
