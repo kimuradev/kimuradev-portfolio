@@ -38,7 +38,7 @@ export default function Project() {
         <>
             <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:px-8">
                 {cardData.map((item, index) => (
-                    <Card id={item.id} src={item.img} alt={item.alt} seconds={index+3}/>
+                    <Card key={item.id} id={item.id} src={item.img} alt={item.alt} seconds={index+3}/>
                 ))}
             </section>
         </>
