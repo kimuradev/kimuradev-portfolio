@@ -13,7 +13,7 @@ export default function JobDetails({ params }) {
             <PageTitle title={params.job} enableBack />
 
             {data && data.projects.map((item: ProjectDetailProps, index) => (
-                <div className="flex flex-col lg:flex-row ">
+                <div key={item.projectName} className="flex flex-col lg:flex-row ">
                     <ProjectDetails data={item} isReverse={index % 2} />
                     <ProjectImage src={item.img} url={item.url} isReverse={index % 2}/>
                 </div>

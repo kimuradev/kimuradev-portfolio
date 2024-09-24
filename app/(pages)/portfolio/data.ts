@@ -6,6 +6,11 @@ import MirumCard from 'app/assets/mirum-card.jpg'
 import HsbcCard from 'app/assets/hsbc-card.jpg'
 import PbCard from 'app/assets/pb-card.jpg'
 import BradescoCard from 'app/assets/bradesco-card.jpg'
+import ABCard from 'app/assets/ab-tenis-card.jpg'
+import SmartRacingCard from 'app/assets/smart-racing-card.jpg'
+import MyLittleSchoolCard from 'app/assets/minha-escolinha-card.jpg'
+import VoltageCard from 'app/assets/voltage-card.jpg'
+import MultiplicationCard from 'app/assets/multiplication-card.jpg'
 
 import SkunexusImage from 'app/assets/skunexus.png'
 import BoschADEImage from 'app/assets/bosch-ade.png'
@@ -18,6 +23,11 @@ import HsbcImage from 'app/assets/hsbc.png'
 import PbImage from 'app/assets/pb-consignado.png'
 import BradescoApp from 'app/assets/bradesco-app.png'
 import BradescoUnipass from 'app/assets/bradesco-unipass.png'
+import ABImage from 'app/assets/ab-tenis-app.png'
+import SmartRacingImage from 'app/assets/smart-racing-app.png'
+import MyLittleSchoolImage from 'app/assets/minha-escolinha-app.png'
+import VoltageImage from 'app/assets/voltage-app.png'
+import MultiplicationImage from 'app/assets/multiplication-app.png'
 
 export const cardData: CardDataProps[] = [
     {
@@ -179,7 +189,7 @@ export const projectDetailsData: ProjectProps[] = [
                 period: '2023 - present',
                 tags: ['Next JS', 'Typescript', 'Node.js', 'Prisma ORM', 'Postgres'],
                 description: 'The Championship System management is a comprehensive platform for Tennis players that encompasses scheduling matches, tracking monthly and yearly game statistics, managing ranking scores, organizing tournaments, handling financial aspects, and more.',
-                img: SkunexusImage,
+                img: ABImage,
                 url: "https://ab-tenis.vercel.app/"
             }
         ]
@@ -192,7 +202,7 @@ export const projectDetailsData: ProjectProps[] = [
                 period: '2021',
                 tags: ['Android', 'Java', 'SQLite'],
                 description: 'Android application to collect data in real time: car damage, tyre wear, current speed, RPM, gear, current position, laps, fuel mix type, fuel laps and so on.',
-                img: BoschIntrack,
+                img: SmartRacingImage,
                 url: "https://smartracingapp.web.app/"
             },
         ]
@@ -203,10 +213,10 @@ export const projectDetailsData: ProjectProps[] = [
             {
                 projectName: 'My Little School | App',
                 period: '2021 ',
-                tags: ['React', 'React Native', 'Javascript'],
+                tags: ['React', 'React Native', 'Javascript', 'Node.js', 'Mongo DB'],
                 description: 'A mobile app designed to help parents find nearby schools based on their location. The app features advanced filters, allowing users to search by distance, tuition fees, and class schedules, offering a personalized and efficient way to select the best educational options for their children.',
-                img: BoschIntrack,
-                url: "https://smartracingapp.web.app/"
+                img: MyLittleSchoolImage,
+                url: "https://www.facebook.com/minhaescolinha"
             },
         ]
     },
@@ -214,12 +224,12 @@ export const projectDetailsData: ProjectProps[] = [
         id: 'voltage',
         projects: [
             {
-                projectName: 'Voltage Calculator | App',
+                projectName: 'Voltage Divider Calculator | App',
                 period: '2020',
                 tags: ['React', 'React Native', 'Javascript'],
-                description: 'Led the bank’s digital transformation, developing a PWA using React. Implemented a Design System and integrated push notifications, focusing on optimizing customer experience.',
-                img: PbImage,
-                url: "https://pbconsignado.com.br/"
+                description: 'An application designed to calculate input and output voltages across resistors, as well as different voltage levels in electrical circuits. This tool simplifies the process of determining voltage drops, making it easier for users to analyze and design circuits efficiently.',
+                img: VoltageImage,
+                url: "#"
             }
         ]
     },
@@ -229,95 +239,40 @@ export const projectDetailsData: ProjectProps[] = [
             {
                 projectName: 'Learn Multiplication Table | Alexa skill',
                 period: '2019',
-                tags: ['Javascript'],
+                tags: ['Javascript', 'Alexa skill'],
                 description: 'This skill helps children master multiplication tables from 1 to 10 through engaging repetition. It’s designed to make learning multiplication easier and more fun, reinforcing key concepts in a simple and effective way',
-                img: UnicefImage,
+                img: MultiplicationImage,
                 url: "https://www.amazon.com.br/kimuradev-Aprenda-Tabuada/dp/B081B893K3"
             },
         ]
     },
 ]
-
 
 export const extraCardData: CardDataProps[] = [
     {
         id: 'ab',
-        img: MirumCard,
+        img: ABCard,
         alt: 'AB logo'
     },
     {
         id: 'smart_racing',
-        img: BoschCard,
+        img: SmartRacingCard,
         alt: 'Smart Racing logo'
     },
     {
         id: 'my_little_school',
-        img: BoschCard,
+        img: MyLittleSchoolCard,
         alt: 'My Little School logo'
     },
     {
         id: 'voltage',
-        img: SkunexusCard,
+        img: VoltageCard,
         alt: 'Voltage Calculator logo'
     },
     {
         id: 'multiplication_table',
-        img: PbCard,
+        img: MultiplicationCard,
         alt: 'Alexa logo'
     },
 ]
 
-export const extraProjectDetailsData: ProjectProps[] = [
-    {
-        id: 'ab',
-        projects: [
-            {
-                projectName: 'AB Tennis Championship Manager',
-                period: '2023 - present',
-                tags: ['Next JS', 'Typescript', 'Node.js', 'Prisma ORM', 'Postgres'],
-                description: 'The Championship System management is a comprehensive platform for Tennis players that encompasses scheduling matches, tracking monthly and yearly game statistics, managing ranking scores, organizing tournaments, handling financial aspects, and more.',
-                img: SkunexusImage,
-                url: "https://ab-tenis.vercel.app/"
-            }
-        ]
-    },
-    {
-        id: 'smart_racing',
-        projects: [
-            {
-                projectName: 'SmartRacing SIM dashboard | App',
-                period: '2021 - present',
-                tags: ['Android', 'Java', 'SQLite'],
-                description: 'Android application to collect data in real time: car damage, tyre wear, current speed, RPM, gear, current position, laps, fuel mix type, fuel laps and so on.',
-                img: BoschIntrack,
-                url: "https://smartracingapp.web.app/"
-            },
-        ]
-    },
-    {
-        id: 'voltage',
-        projects: [
-            {
-                projectName: 'Voltage Calculator | App',
-                period: '2018 - 2020',
-                tags: ['React', 'React Native', 'Javascript'],
-                description: 'Led the bank’s digital transformation, developing a PWA using React. Implemented a Design System and integrated push notifications, focusing on optimizing customer experience.',
-                img: PbImage,
-                url: "https://pbconsignado.com.br/"
-            }
-        ]
-    },
-    {
-        id: 'multiplication_table',
-        projects: [
-            {
-                projectName: 'Learn Multiplication Table | Alexa skill',
-                period: '2018',
-                tags: ['Javascript'],
-                description: 'This skill helps children master multiplication tables from 1 to 10 through engaging repetition. It’s designed to make learning multiplication easier and more fun, reinforcing key concepts in a simple and effective way',
-                img: UnicefImage,
-                url: "https://www.amazon.com.br/kimuradev-Aprenda-Tabuada/dp/B081B893K3"
-            },
-        ]
-    },
-]
