@@ -23,7 +23,7 @@ export default function Page() {
 
   return (
     <>
-      <PageTitle index="02" title={metadata.title} />
+      <PageTitle index="03" title={metadata.title} />
       <section className="flex flex-col lg:flex-row lg:px-8 gap-8">
         <MenuList data={data} selectedData={selectedData as ExperienceDataProps} handleClick={handleSelectExperience} />
         <JobDescription data={selectedData as ExperienceDataProps} />

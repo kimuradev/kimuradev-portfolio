@@ -11,11 +11,11 @@ export default function Page() {
   return (
     <>
       <section>
-        <PageTitle index="03" title={metadata.title} />
+        <PageTitle index="02" title={metadata.title} />
         <Project data={cardData} />
       </section>
       <section className="mt-8">
-        <PageTitle index="03.1" title="Extra work" />
+        <PageTitle index="02.1" title="Extra work" />
         <Project data={extraCardData}/>
       </section>
     </>
