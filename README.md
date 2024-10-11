@@ -11,6 +11,3 @@ This is a porfolio site template complete. Includes:
 
 https://kimuradev.com
 
-## How to Use
-
-You can choose from one of the following two methods to use this repository:
