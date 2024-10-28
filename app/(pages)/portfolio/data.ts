@@ -11,6 +11,7 @@ import SmartRacingCard from 'app/assets/smart-racing-card.jpg'
 import MyLittleSchoolCard from 'app/assets/minha-escolinha-card.jpg'
 import VoltageCard from 'app/assets/voltage-card.jpg'
 import MultiplicationCard from 'app/assets/multiplication-card.jpg'
+import TriplannerCard from 'app/assets/triplanner-card.jpg'
 
 import SkunexusImage from 'app/assets/skunexus.png'
 import BoschADEImage from 'app/assets/bosch-ade.png'
@@ -28,6 +29,7 @@ import SmartRacingImage from 'app/assets/smart-racing-app.png'
 import MyLittleSchoolImage from 'app/assets/minha-escolinha-app.png'
 import VoltageImage from 'app/assets/voltage-app.png'
 import MultiplicationImage from 'app/assets/multiplication-app.png'
+import TriplannerImage from 'app/assets/triplanner-app.png'
 
 export const cardData: CardDataProps[] = [
     {
@@ -182,6 +184,19 @@ export const projectDetailsData: ProjectProps[] = [
         ]
     },
     {
+        id: 'triplanner',
+        projects: [
+            {
+                projectName: 'Triplanner App',
+                period: '2024 - present',
+                tags: ['React Native', 'Typescript', 'Node.js', 'Drizzle ORM', 'SQLite'],
+                description: 'Triplanner is your personal travel assistant that helps you organize every detail of your trips. Easily add your travel destinations, and plan out your activities day by day. The app ensures an intuitive and seamless experience for managing travel itineraries, enhancing the overall travel experience.' ,
+                img: TriplannerImage,
+                url: "#"
+            }
+        ]
+    },
+    {
         id: 'ab',
         projects: [
             {
@@ -250,6 +265,11 @@ export const projectDetailsData: ProjectProps[] = [
 
 export const extraCardData: CardDataProps[] = [
     {
+        id: 'triplanner',
+        img: TriplannerCard,
+        alt: 'Alexa logo'
+    },
+    {
         id: 'ab',
         img: ABCard,
         alt: 'AB logo'
@@ -274,5 +294,6 @@ export const extraCardData: CardDataProps[] = [
         img: MultiplicationCard,
         alt: 'Alexa logo'
     },
+   
 ]
 
