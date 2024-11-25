@@ -192,7 +192,7 @@ export const projectDetailsData: ProjectProps[] = [
                 tags: ['React Native', 'Typescript', 'Node.js', 'Drizzle ORM', 'SQLite'],
                 description: 'Triplanner is your personal travel assistant that helps you organize every detail of your trips. Easily add your travel destinations, and plan out your activities day by day. The app ensures an intuitive and seamless experience for managing travel itineraries, enhancing the overall travel experience.' ,
                 img: TriplannerImage,
-                url: "#"
+                url: "https://play.google.com/store/apps/details?id=com.kimuradev.triplanner&hl=pt_BR"
             }
         ]
     },
