@@ -10,7 +10,6 @@ const ThemeSwitchButton = () => {
   const { theme, setTheme } = useTheme()
   const isDarkMode = theme === 'dark';
 
-  // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
     setMounted(true)
   }, [])

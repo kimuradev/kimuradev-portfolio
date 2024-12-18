@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ProjectImage({ src, url, isReverse }: { src: any, url: string, isReverse: number }) {
     return (

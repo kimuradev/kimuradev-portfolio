@@ -1,9 +1,8 @@
-import PageTitle from "app/components/page-title";
-import ProjectDetails from "./details";
 import ProjectImage from "./image";
+import ProjectDetails from "./details";
 import { projectDetailsData } from "../data";
+import PageTitle from "app/components/page-title";
 import { type ProjectDetailProps, type ProjectProps } from "../definitions";
-
 
 export default function JobDetails({ params }) {
     const data: ProjectProps | undefined = projectDetailsData.find(project => project.id === params.job)

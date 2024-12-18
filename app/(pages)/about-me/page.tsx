@@ -1,6 +1,6 @@
-import PageTitle from "app/components/page-title"
 import Description from "./description"
 import ProfileImage from "./profile-image"
+import PageTitle from "app/components/page-title"
 
 export const metadata = {
   title: 'about me',

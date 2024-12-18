@@ -1,5 +1,6 @@
-import Image from "next/image"
 import Link from "next/link"
+import Image from "next/image"
+
 import { CardDataProps } from "./definitions"
 
 function Card({ id, src, alt, seconds }: { id: string, src: any, alt: string, seconds: number }) {
@@ -33,14 +34,12 @@ function LearnMore({ id }: { id: string }) {
     )
 }
 
-export default function Project({ data }: { data: CardDataProps[]}) {
+export default function Project({ data }: { data: CardDataProps[] }) {
     return (
-        <>
-            <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:px-8">
-                {data.map((item, index) => (
-                    <Card key={item.id} id={item.id} src={item.img} alt={item.alt} seconds={index+3}/>
-                ))}
-            </section>
-        </>
+        <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 lg:px-8">
+            {data.map((item, index) => (
+                <Card key={item.id} id={item.id} src={item.img} alt={item.alt} seconds={index + 3} />
+            ))}
+        </section>
     )
 }

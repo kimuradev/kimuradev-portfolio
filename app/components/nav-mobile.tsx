@@ -54,7 +54,7 @@ const NavMobile = () => {
     };
 
     return (
-        <div className="mb-8 lg:mb-16 tracking-tight flex items-end justify-between">
+        <div className="lg:hidden mb-8 lg:mb-16 tracking-tight flex items-end justify-between">
             <Logo />
 
             <div className='mr-[40px] -mt-[2px]'>

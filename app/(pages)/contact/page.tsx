@@ -1,5 +1,6 @@
-import PageTitle from "app/components/page-title"
 import { Send } from "lucide-react"
+
+import PageTitle from "app/components/page-title"
 
 export const metadata = {
   title: 'contact me',

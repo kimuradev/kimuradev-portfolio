@@ -5,8 +5,7 @@ import ThemeSwitchButton from './theme-switch'
 
 export function Navbar() {
   return (
-    <>
-      <header className="hidden mb-16 tracking-tight lg:flex items-end justify-between">
+      <header className="hidden lg:block mb-16 tracking-tight lg:flex items-end justify-between">
         <div className='transition-fadein-down'>
           <Logo />
         </div>
@@ -24,6 +23,5 @@ export function Navbar() {
           </nav>
         </div>
       </header>
-    </>
   )
 }
