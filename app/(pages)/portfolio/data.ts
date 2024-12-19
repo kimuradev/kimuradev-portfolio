@@ -281,7 +281,7 @@ export const projectDetailsData: ProjectProps[] = [
         description:
           'An application designed to calculate input and output voltages across resistors, as well as different voltage levels in electrical circuits. This tool simplifies the process of determining voltage drops, making it easier for users to analyze and design circuits efficiently.',
         img: VoltageImage,
-        url: '#'
+        url: 'https://play.google.com/store/apps/details?id=com.voltagecalcrn'
       }
     ]
   },
