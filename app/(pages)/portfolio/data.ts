@@ -8,6 +8,7 @@ import ABCard from 'app/assets/ab-tenis-card.jpg'
 import VoltageCard from 'app/assets/voltage-card.jpg'
 import SkunexusCard from 'app/assets/skunexus-card.jpg'
 import BradescoCard from 'app/assets/bradesco-card.jpg'
+import SuperOitoCard from 'app/assets/super-oito-card.jpg'
 import TriplannerCard from 'app/assets/triplanner-card.jpg'
 import SmartRacingCard from 'app/assets/smart-racing-card.jpg'
 import MyLittleSchoolCard from 'app/assets/minha-escolinha-card.jpg'
@@ -16,6 +17,7 @@ import MultiplicationCard from 'app/assets/multiplication-card.jpg'
 import HsbcImage from 'app/assets/hsbc.png'
 import ABImage from 'app/assets/ab-tenis-app.png'
 import PbImage from 'app/assets/pb-consignado.png'
+import SuperOitoImage from 'app/assets/super-oito-app.png'
 import SkunexusImage from 'app/assets/skunexus.png'
 import BoschADEImage from 'app/assets/bosch-ade.png'
 import MirumSkyImage from 'app/assets/mirum-sky.png'
@@ -210,6 +212,25 @@ export const projectDetailsData: ProjectProps[] = [
     ]
   },
   {
+    id: 'superoito',
+    projects: [
+      {
+        projectName: 'Super Oito App',
+        period: '2025 - present',
+        tags: [
+          'Next JS',
+          'Typescript',
+          'Prisma ORM',
+          'Postgres'
+        ],
+        description:
+          'Super Oito is a web application designed for organizing beach tennis tournaments with up to 8 doubles teams. It streamlines match scheduling, score tracking, and rankings, making tournament management effortless and efficient. ',
+        img: SuperOitoImage,
+        url: 'https://superoito.app'
+      }
+    ]
+  },
+  {
     id: 'triplanner',
     projects: [
       {
@@ -302,6 +323,11 @@ export const projectDetailsData: ProjectProps[] = [
 ]
 
 export const extraCardData: CardDataProps[] = [
+  {
+    id: 'superoito',
+    img: SuperOitoCard,
+    alt: 'Super Oito logo'
+  },
   {
     id: 'triplanner',
     img: TriplannerCard,
