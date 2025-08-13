@@ -8,6 +8,8 @@ import MirumCard from 'app/assets/mirum-card.jpg'
 import ABCard from 'app/assets/ab-tenis-card.jpg'
 import VoltageCard from 'app/assets/voltage-card.jpg'
 import SkunexusCard from 'app/assets/skunexus-card.jpg'
+import UltranetCard from 'app/assets/ultranet-card.jpg'
+import ImpremixCard from 'app/assets/impremix-card.jpg'
 import BradescoCard from 'app/assets/bradesco-card.jpg'
 import SuperOitoCard from 'app/assets/super-oito-card.jpg'
 import TriplannerCard from 'app/assets/triplanner-card.jpg'
@@ -19,7 +21,6 @@ import HsbcImage from 'app/assets/hsbc.png'
 import MeezImage from 'app/assets/meez-app.png'
 import ABImage from 'app/assets/ab-tenis-app.png'
 import PbImage from 'app/assets/pb-consignado.png'
-import SuperOitoImage from 'app/assets/super-oito-app.png'
 import SkunexusImage from 'app/assets/skunexus.png'
 import BoschADEImage from 'app/assets/bosch-ade.png'
 import MirumSkyImage from 'app/assets/mirum-sky.png'
@@ -28,6 +29,9 @@ import VoltageImage from 'app/assets/voltage-app.png'
 import BradescoApp from 'app/assets/bradesco-app.png'
 import UnicefImage from 'app/assets/mirum-unicef.png'
 import BoschIntrack from 'app/assets/bosch-intrack.png'
+import UltranetImage from 'app/assets/ultranet-app.png'
+import ImpremixImage from 'app/assets/impremix-app.png'
+import SuperOitoImage from 'app/assets/super-oito-app.png'
 import TriplannerImage from 'app/assets/triplanner-app.png'
 import MirumLosangoImage from 'app/assets/mirum-losango.png'
 import BradescoUnipass from 'app/assets/bradesco-unipass.png'
@@ -233,6 +237,40 @@ export const projectDetailsData: ProjectProps[] = [
     ]
   },
   {
+    id: 'impremix',
+    projects: [
+      {
+        projectName: 'Impremix Web App',
+        period: '2025 ',
+        tags: [
+          'Next JS',
+          'Typescript',
+        ],
+        description:
+          'Intelligent printing. Optimize your resources with outsourcing solutions that reduce expenses and increase productivity.',
+        img: ImpremixImage,
+        url: 'https://www.impremixsolucoes.com.br/'
+      }
+    ]
+  },
+  {
+    id: 'ultranet',
+    projects: [
+      {
+        projectName: 'Ultranet Web App',
+        period: '2025',
+        tags: [
+          'Next JS',
+          'Typescript',
+        ],
+        description:
+          'Local internet provider, 100% from Bocaiúva, born with over 15 years of experience and focused on ensuring stable and quality internet.',
+        img: UltranetImage,
+        url: 'https://www.ultranetvale.net.br/'
+      }
+    ]
+  },
+  {
     id: 'superoito',
     projects: [
       {
@@ -344,6 +382,16 @@ export const projectDetailsData: ProjectProps[] = [
 ]
 
 export const extraCardData: CardDataProps[] = [
+  {
+    id: 'impremix',
+    img: ImpremixCard,
+    alt: 'Impremix logo'
+  },
+  {
+    id: 'ultranet',
+    img: UltranetCard,
+    alt: 'Ultranet logo'
+  },
   {
     id: 'superoito',
     img: SuperOitoCard,
