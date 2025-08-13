@@ -2,6 +2,7 @@ import { CardDataProps, ProjectProps } from './definitions'
 
 import PbCard from 'app/assets/pb-card.jpg'
 import HsbcCard from 'app/assets/hsbc-card.jpg'
+import MeezCard from 'app/assets/meez-card.jpg'
 import BoschCard from 'app/assets/bosch-card.jpg'
 import MirumCard from 'app/assets/mirum-card.jpg'
 import ABCard from 'app/assets/ab-tenis-card.jpg'
@@ -15,6 +16,7 @@ import MyLittleSchoolCard from 'app/assets/minha-escolinha-card.jpg'
 import MultiplicationCard from 'app/assets/multiplication-card.jpg'
 
 import HsbcImage from 'app/assets/hsbc.png'
+import MeezImage from 'app/assets/meez-app.png'
 import ABImage from 'app/assets/ab-tenis-app.png'
 import PbImage from 'app/assets/pb-consignado.png'
 import SuperOitoImage from 'app/assets/super-oito-app.png'
@@ -34,6 +36,11 @@ import MultiplicationImage from 'app/assets/multiplication-app.png'
 import MyLittleSchoolImage from 'app/assets/minha-escolinha-app.png'
 
 export const cardData: CardDataProps[] = [
+  {
+    id: 'meez',
+    img: MeezCard,
+    alt: 'Meez logo'
+  },
   {
     id: 'skunexus',
     img: SkunexusCard,
@@ -67,6 +74,20 @@ export const cardData: CardDataProps[] = [
 ]
 
 export const projectDetailsData: ProjectProps[] = [
+  {
+    id: 'meez',
+    projects: [
+      {
+        projectName: 'Meez | App',
+        period: '2025',
+        tags: ['React', 'Redux', 'Javascript', 'TypeScript', 'Storybook', 'Material UI'],
+        description:
+          'Meez is a platform that allows you to run a more profitable kitchen. The smarter way to manage recipes, menus and professional kitchens at scale.',
+        img: MeezImage,
+        url: 'https://getmeez.com/'
+      }
+    ]
+  },
   {
     id: 'skunexus',
     projects: [
