@@ -2,10 +2,23 @@ import { type ExperienceDataProps } from "./definitions";
 
 export const data: ExperienceDataProps[] = [
     {
+        id: 'meez',
+        companyName: 'Meez',
+        jobTitle: 'Senior Frontend Developer',
+        period: ' Mar 2025 - Present',
+        jobDescription: [
+            `responsible for implementing new features and maintaining a modern web application focused on recipe, menu, and cost management for restaurants`,
+            `work extensively with React 18, Material UI, and React Router to build scalable, maintainable, and high-performance user interfaces`,
+            `lead the implementation of a Design System to improve UI consistency, accelerate development, and promote reusable component architecture`,
+            `collaborate with backend engineers to integrate RESTful APIs built with Python, ensuring reliable and efficient data-driven workflows`,
+            `contribute to frontend architecture improvements, performance optimization, and adoption of best practices to support product scalability`
+        ]
+    },
+    {
         id: 'skunexus',
         companyName: 'SkuNexus',
         jobTitle: 'Senior Frontend Developer',
-        period: 'Apr 2022 - Present',
+        period: 'Apr 2022 - Fev 2025',
         jobDescription: [
             `responsible for implementing new features and maintaining legacy code, always striving for improvements and adhering to best practices.`,
             `work extensively with the React JS framework, developing core and custom modules using both monorepo and polyrepo structures`,
